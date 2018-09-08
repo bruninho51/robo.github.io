@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Chango');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+html body{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+#cabecario-principal{
+    display: flex;
+    align-content: center; /*Alinha items no eixo vertical*/
+    flex-wrap: wrap;
+}
+#logo{
+    flex-basis: 50%; /*Define largura do item*/
+    padding: 0px;
+    margin: 0px;
+    height: 100px; /*Devido align-content, o curtir terá a mesma altura*/
+}
+#curtir-redes-sociais{
+    /*background-color: #F00;*/
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#curtir-redes-sociais img{
+    width: 64px;
+    height: 64px;
+    float: right;
+}
+p{
+    text-align: justify;
+    font-family: 'Times New Roman';
+}
+article p:first-of-type:first-letter{
+    font-size: 3em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+article p:not(:first-of-type):first-letter{
+    padding-left: 1.8em;
+}
+#nav-principal{
+    flex-basis: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#nav-principal ul{
+    display: inline;
+    padding-left: 0px;
+}
+#nav-principal ul li{
+    display: inline;
+    font-size: 1.5em;
+}
+#nav-principal ul li a{
+    text-decoration: none;
+    color: black;
+}
+#nav-principal ul li a:hover{
+    color: #04F;
+}
+#fotos-robo article button{
+    margin: 0 auto;
+    display: block;
+    border: 0px;
+    background-color: transparent;
+    font-size: 1.4em;
+}
+#fotos-robo article button:hover{
+    cursor: pointer;
+    color: #04F;
+    
+}
+#nav-principal ul li:not(:first-child)::before{
+    content: 'X  ';
+    font-family: 'Chango', cursive;
+}
+#sobre-robocup{
+
+}
+#imagens-robo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#imagens-robo img{
+    padding-bottom: 7px;
+}
+#imagens-robo img:nth-child(odd){
+    float: left;
+}
+#rodape-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+}
